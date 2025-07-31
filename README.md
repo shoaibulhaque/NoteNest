@@ -4,16 +4,6 @@ A full-stack note-taking application built with the MERN stack (MongoDB, Express
 
 ---
 
-## Features
-
-- Create, read, update, and delete notes
-- User-friendly React frontend with Tailwind CSS
-- RESTful API backend with Express.js
-- MongoDB for persistent storage
-- Rate limiting middleware to prevent abuse
-
----
-
 ## Project Structure
 
 ```
