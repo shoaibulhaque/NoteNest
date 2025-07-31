@@ -101,6 +101,3 @@ MERN-NoteNest/
 
 ---
 
-## License
-
-MIT
