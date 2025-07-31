@@ -29,7 +29,6 @@ MERN-NoteNest/
 │   ├── package.json
 │   └── ...
 ├── package.json
-├── technical_architecture.md
 └── README.md
 ```
 
