@@ -12,6 +12,7 @@
  * // app.use('/api/notes', notesRoutes);
  */
 import express from "express";
+import mongoose from "mongoose";
 import {
   createNote,
   deleteNote,
@@ -21,6 +22,13 @@ import {
 } from "../controllers/notesController.js";
 
 const router = express.Router();
+
+router.param("id", (req, res, next, id) => {
+  if (!mongoose.isObjectIdOrHexString(id)) {
+    return res.status(400).json({ message: "Invalid note ID" });
+  }
+  next();
+});
 
 // The prefix for these methods is in the server.js
 router.get("/", getAllNotes);
